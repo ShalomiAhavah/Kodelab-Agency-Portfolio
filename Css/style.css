@@ -14,6 +14,10 @@
   font-family: Mona Sans regular;
   src: url(/Assets/Fonts/MonaSans/OTF/Mona-Sans-Regular.otf);
 }
+@font-face {
+  font-family: Mona Sans Narrow Italic;
+  src: url(/Assets/Fonts/MonaSans/OTF/Mona-Sans-MediumNarrowItalic.otf);
+}
 *,
 *::after,
 *::before {
@@ -111,7 +115,7 @@ h1 {
   font-family: Mona Sans Wide;
   font-style: wide;
   font-weight: 400;
-  font-size: 6.25rem;
+  font-size: 6.2rem;
   line-height: 9rem;
 }
 .main_title1 {
@@ -150,11 +154,70 @@ h1 {
 .title2_about {
   font-family: Mona Sans Italic;
   font-weight: 100;
+  margin: 4vh 0;
 }
 .title2_kodelab {
   font-weight: 600;
   letter-spacing: 1px;
 }
 .section2_p {
-  font-size: 1.5rem;
+  width: 100vw;
+  padding: 0 4.45vw;
+  font-size: 2.9rem;
+  margin: 5vh 0 0 0;
+  line-height: 10vh;
+  word-spacing: 1.5px;
+  letter-spacing: 1;
+  font-family: Mona Sans;
+}
+.horizontal_divider {
+  width: 90vw;
+  margin: 10vh auto;
+  height: 1.5px;
+  background-color: #D9D9D9;
+}
+.features {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 4.35vw;
+  display: flex;
+  flex-direction: row;
+}
+.feature1,
+.feature2,
+.feature3 {
+  width: 29vw;
+  padding: 0 3vw 0 0;
+}
+.feature2,
+.feature3 {
+  width: 32vw;
+  padding: 0 3vw 0 3vw;
+}
+.features h2 {
+  font-size: 6.3rem;
+  background: -webkit-linear-gradient(white, #313131);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.features h4 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin: 4vh 0 7vh 0;
+}
+.features_p {
+  font-size: 1.3rem;
+  font-family: Mona Sans regular;
+  color: #c2c2c2;
+  padding: px;
+  line-height: 2.4rem;
+}
+.vertical_divider {
+  height: 100%;
+  width: 1px;
+  background-color: #c2c2c2;
+  margin: 0 1vw 0 0;
+}
+.wierd_cube {
+  margin: 8vh 0;
 }
