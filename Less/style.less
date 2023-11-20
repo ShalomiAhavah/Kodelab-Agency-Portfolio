@@ -27,6 +27,7 @@
 body {
   background: @background;
   overflow: auto;
+  overflow-x: hidden;
 }
 
 .container {
@@ -86,7 +87,7 @@ header {
   flex-direction: row;
 }
 
-#lets_talk {
+.lets_talk {
   height: inherit;
   width: 9vw;
   margin: 0 2vw 0 0;
@@ -131,19 +132,20 @@ h1 {
   font-style: wide;
   font-weight: 400;
   font-size: 6.5vw;
-  line-height: 9rem;
+  line-height: 15vh;
 }
   
 
 
 .oval_icons {
   display: inline;
-  height: 14vh;
 }
 .oval_icon1 {
+ width: 24vw;
   margin: 0 1.5vw -2.5vh 1vw;
 }
 .oval_icon2 {
+  width: 13vw;
   margin: 0 0 -2.5vh 1.5vw;
 }
 
@@ -367,3 +369,76 @@ h1 {
 }
 
 //Tape - Selected Projects
+
+#tape {
+  width: 100vw;
+  height: 13vw;
+  background-color: @c-w2;
+  text-align: center;
+}
+#tape span {
+  display: block;
+  color: black;
+  font-size: 6.78vw;
+  line-height: 13vw;
+  font-style: italic;
+}
+#tape img {
+  height: 6.7vw;
+}
+//Section5 portfolio 
+
+.section5 {
+  margin: 14vh auto;
+  display: grid;
+}
+#section5_example {
+  display: flex;
+  flex-direction: row;
+}
+
+#section5_mockup {
+width: 57.7vw;
+margin: 0 1vw 0 0;
+}
+#section5_mockup-description {
+  height: 100%;
+  width: 31vw;
+  margin: auto;
+  padding:7vh 3vw;
+  background-color: @service_bg;
+}
+
+#section5_mockup-description h3 {
+  font-size: 2.65vw;
+  font-weight: 100;
+  margin:0 0 5vh 0;
+}
+
+#section5_mockup-description p {
+  font-size: 1.1vw;
+  font-weight: 100;
+  line-height: 4vh;
+  letter-spacing: 1px;
+  color: @text;
+}
+
+.button_style {
+  height: 6.1vh;
+  width: 7vw;
+  display: inline-block;
+  margin: 2.5vh 0.5vw 2.5vh 0;
+  border: 1px solid @c-w2;
+  font-size: 1.1vw;
+  line-height: 6.1vh;
+  text-align: center;
+  border-radius: 40px;
+}
+#section5_largebutton {
+  width: 14.3vw;
+  height: 8.4vh;
+  display: block;
+  margin: 3vh 0;
+  line-height: 8.4vh;
+  border: 2px solid @c-w2;
+}
