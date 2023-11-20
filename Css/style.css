@@ -63,9 +63,9 @@ header {
 }
 .nav_link {
   height: 7vh;
-  width: 7vw;
+  width: 7.5vw;
   margin: auto;
-  font-size: 0.95rem;
+  font-size: 1.1vw;
   line-height: 7vh;
   text-align: center;
 }
@@ -85,7 +85,7 @@ header {
   width: 9vw;
   margin: 0 2vw 0 0;
   border: 1px solid #EEE5E5;
-  font-size: 0.95rem;
+  font-size: 1.1vw;
   line-height: 9vh;
   text-align: center;
   border-radius: 40px;
@@ -100,7 +100,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 33px;
+  border-radius: 50%;
   background: linear-gradient(0deg, #1E1E1E, #313131);
 }
 .dropdown_lines {
@@ -143,6 +143,7 @@ h1 {
 #section1_img {
   display: block;
   margin: 7vh auto 4vh auto;
+  width: 90vw;
 }
 .circle_graphic {
   position: absolute;
@@ -151,7 +152,7 @@ h1 {
 .title2 {
   margin: 7vh 0 0 0.4vw;
   letter-spacing: 1px;
-  font-size: 4rem;
+  font-size: 4.65vw;
 }
 .title2_about {
   font-family: Mona Sans Italic;
@@ -165,7 +166,7 @@ h1 {
 .section2_p {
   width: 100vw;
   padding: 0 0.5vw;
-  font-size: 2.9rem;
+  font-size: 3vw;
   margin: 6.5vh 0 0 0;
   line-height: 10vh;
   word-spacing: 1.5px;
@@ -177,6 +178,10 @@ h1 {
   margin: 10vh auto;
   height: 1.5px;
   background-color: #D9D9D9;
+  position: relative;
+}
+#horizontal_divider2 {
+  margin: 10vh auto 0 auto;
 }
 .features {
   width: 100vw;
@@ -197,19 +202,19 @@ h1 {
   padding: 0 3vw;
 }
 .features h2 {
-  font-size: 6.3rem;
+  font-size: 6.5vw;
   background: -webkit-linear-gradient(white, #313131);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .features h4 {
-  font-size: 1.9rem;
+  font-size: 2vw;
   font-weight: 400;
   margin: 4vh 0 7vh 0;
 }
 .features_p {
-  font-size: 1.3rem;
+  font-size: 1.5vw;
   font-family: Mona Sans regular;
   color: #c2c2c2;
   padding: px;
@@ -229,12 +234,12 @@ h1 {
   padding: 0 4.45vw;
 }
 .section3_h {
-  font-size: 6.3rem;
+  font-size: 7.3vw;
   font-weight: 400;
 }
 .section3_h--our {
   display: block;
-  font-size: 6rem;
+  font-size: 6.97vw;
   font-family: Mona Sans Italic;
 }
 .section3_h {
@@ -250,24 +255,24 @@ h1 {
 }
 .service h3 {
   position: absolute;
-  font-size: 4rem;
+  font-size: 4.6vw;
   font-weight: 100;
   margin: 12vh 0 5vh 5vw;
 }
 .service img {
   width: 92vw;
-  height: 95vh;
+  height: auto;
 }
 #service2 img {
-  height: 65vh;
-  width: auto;
+  height: auto;
+  width: 38vw;
   margin: auto 4vw;
 }
 #service2 h3 {
-  margin: 44vh 0 0 50%;
+  margin: 46vh 0 0 50%;
 }
 #service2 p {
-  margin: 58vh 0 0 50%;
+  margin: 60vh 0 0 50%;
 }
 .service_p {
   position: absolute;
@@ -275,7 +280,35 @@ h1 {
   letter-spacing: 1.3px;
   word-spacing: 1px;
   line-height: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.4vw;
   margin: 25vh 0 0 5vw;
   color: #c2c2c2;
+}
+.section4 {
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+.section4 h2 {
+  font-size: 5vw;
+  line-height: 13vh;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin: auto;
+}
+.section4 h3 {
+  font-size: 2vw;
+  font-weight: 100;
+}
+.section4 p {
+  width: 68%;
+  margin: 5vh 0;
+  font-size: 1.3vw;
+  font-weight: 100;
+  line-height: 4.2vh;
+  letter-spacing: 1px;
+  color: #c2c2c2;
+}
+#section4_lefttext {
+  margin: 10vh 0 0 0;
 }
