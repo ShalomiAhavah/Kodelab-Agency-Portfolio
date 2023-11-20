@@ -32,6 +32,7 @@ body {
   background: #0D0D0D;
   overflow: auto;
   overflow-x: hidden;
+  width: 100vw;
 }
 .container {
   height: 100vh;
@@ -39,6 +40,7 @@ body {
 }
 section {
   padding: 4.2vw;
+  width: 100vw;
 }
 header {
   margin: 5vh auto;
@@ -331,7 +333,7 @@ h1 {
   height: 6.7vw;
 }
 .section5 {
-  margin: 14vh auto;
+  margin: 14vh auto 5vh auto;
   display: grid;
 }
 #section5_example {
@@ -345,7 +347,7 @@ h1 {
 #section5_mockup-description {
   height: 100%;
   width: 31vw;
-  margin: auto;
+  margin: 0 2vw;
   padding: 7vh 3vw;
   background-color: #161719;
 }
@@ -379,4 +381,79 @@ h1 {
   margin: 3vh 0;
   line-height: 8.4vh;
   border: 2px solid #EEE5E5;
+}
+#portfolio {
+  width: 100vw;
+  margin: -7vh auto 10vh auto;
+  display: grid;
+  grid-template-columns: repeat(2, 45vw);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 1.6vw;
+}
+#portfolio :nth-child(even) {
+  grid-column-start: 2;
+}
+.portfolio_item {
+  height: 50vw;
+  width: 44.2vw;
+  margin-top: 8vh;
+}
+.portfolio_item h3 {
+  font-size: 2vw;
+  font-weight: 100;
+  margin: 3.75vh 0 5vh 0;
+  display: inline;
+}
+.portfolio_item a {
+  height: 8.5vh;
+  width: 10.5vw;
+  display: inline-block;
+  margin: 2.5vh 0 2.5vh 9vw;
+  border: 2px solid #EEE5E5;
+  border-radius: 40px;
+  font-size: 1.2vw;
+  line-height: 8.5vh;
+  text-align: center;
+}
+.portfolio_item img {
+  height: auto;
+}
+.portfolio_item a:hover {
+  background-color: #EEE5E5;
+  color: #0D0D0D;
+  transition: background-color 0.5s ease;
+}
+#view_more {
+  height: 16vw;
+  width: 16vw;
+  margin: 10vh auto 23vh auto;
+  display: block;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  line-height: 16vw;
+  text-align: center;
+  font-size: 1.2vw;
+}
+.section6 {
+  display: flex;
+  flex-direction: row;
+}
+.section6 img {
+  width: 30vw;
+  height: 100%;
+  margin: 2vh 0 0 2vw;
+}
+.section6 h2 {
+  padding: 2vh 0 0 8vw;
+  font-size: 5.4vw;
+  font-weight: 100;
+}
+.section6 p {
+  margin: 2vh 0;
+  padding: 2vh 0 0 8vw;
+  color: #c2c2c2;
+  font-size: 1.2vw;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 5vh;
 }
