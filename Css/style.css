@@ -47,6 +47,12 @@ header {
   display: flex;
   flex-direction: row;
 }
+.extra_space {
+  position: absolute;
+  margin: 450vh 0 0 0;
+  height: 50vh;
+  width: 100vw;
+}
 #header_logo {
   height: 6vh;
   width: auto;
@@ -463,7 +469,14 @@ h1 {
   line-height: 5vh;
 }
 .section7 {
+  border: 1px solid blue;
+}
+.container_white_s7 {
+  width: 100vw;
   height: 200vh;
+  margin: -4.2vw 0 0 -4.2vw;
+  padding: 4.2vw;
+  position: absolute;
   background-color: #F5F5F5;
 }
 .section7 h2 {
@@ -490,33 +503,29 @@ h1 {
 }
 #section7_headingsmall {
   color: #F5F5F5;
+  margin: -135vh 0 0 0;
   position: absolute;
-  margin: -125vh 0 0 0;
   font-size: 1.8vw;
   font-weight: 200;
 }
 #section7_heading2 {
   width: 55vw;
   color: #F5F5F5;
-  position: absolute;
-  margin: -132vh 0 0 36vw;
+  margin: -140vh 0 0 36vw;
 }
 #section7_p2 {
   width: 53vw;
-  position: absolute;
-  margin: -89vh 0 0 36vw;
+  margin: 0 0 0 36vw;
   color: #c2c2c2;
 }
 #horizontal_divider_s7 {
   width: 55vw;
-  position: absolute;
-  margin: -70vh 0 0 36vw;
+  margin: 4vh 0 0 36vw;
 }
 #box_of_stats_s7 {
   width: 60vw;
   height: 38vw;
-  margin: -67vh 0 0 36vw;
-  position: absolute;
+  margin: 5vh 0 0 36vw ;
   display: grid;
   grid-template-columns: repeat(2, 30vw);
 }
@@ -535,5 +544,6 @@ h1 {
 }
 #section7_img2 {
   width: 27vw;
-  margin: -50vh 0 0 0;
+  position: absolute;
+  margin: 34vh 0 0 0;
 }
