@@ -1,4 +1,4 @@
-//Variables
+/*Variables */
 
 @background:#0D0D0D;
 @c-w: #F5F5F5;
@@ -15,11 +15,11 @@
 @font-face {font-family: Mona Sans Narrow Italic; src: url(/Assets/Fonts/MonaSans/OTF/Mona-Sans-MediumNarrowItalic.otf);}
 
 
-// 5vw       
-// 4.3rem  
+/* ratio  5vw -- 4.3rem  */
 
-//General Rule Sets
-//--------------------------------------------------------------------------------------
+
+/*General Rule Sets
+--------------------------------------------------------------------------------------*/
 
 *, *::after, *::before {
     margin: 0;
@@ -31,10 +31,9 @@
   }
 
 body {
-  background: @background;
-  overflow: auto;
-  overflow-x: hidden;
   width: 100vw;
+  background: @background;
+  overflow-x: hidden;
 }
 
 .container {
@@ -51,18 +50,27 @@ header {
   display: flex;
   flex-direction: row;
 }
-
-//Extra space at bottom of page- Feel free to delete
-
-.extra_space {
-  position: absolute;
-  margin: 450vh 0 0 0;
-  height: 50vh;
-  width: 100vw;
+h1 {
+  font-family:Mona Sans Wide;
+  font-style: wide;
+  font-weight: 400;
+  font-size: 6.5vw;
+  line-height: 15vh;
 }
 
-//Nav Bar
-//---------------------------------------------------------------------------------------
+/*Extra space at bottom of page- Feel free to delete*/
+
+.extra_space {
+  height: 50vh;
+  width: 100vw;
+  position: absolute;
+  margin: 450vh 0 0 0;
+}
+
+
+
+/*Nav Bar
+---------------------------------------------------------------------------------------*/
 
 #header_logo {
   height: 6vh;
@@ -73,9 +81,9 @@ header {
   width: 33.5vw;
   height: 9vh;
   margin: 1.5vh auto;
+  background: linear-gradient(0deg, #1E1E1E, #313131);
   border:1px solid @bord;
   border-radius: 35px;
-  background: linear-gradient(0deg, #1E1E1E, #313131);
   display: flex;
 }
 
@@ -110,13 +118,13 @@ header {
   width: 9vw;
   margin: 0 2vw 0 0;
   border: 1px solid @c-w2;
+  border-radius: 40px;
   font-size: 1.1vw;
   line-height: 9vh;
   text-align: center;
-  border-radius: 40px;
-}
-#lets_talk:hover {
-  box-shadow: 1px 1px 10px @shadow;
+    &:hover {
+    box-shadow: 1px 1px 10px @shadow;
+  }
 }
 
 .dropdown_menu {
@@ -129,13 +137,15 @@ header {
   border-radius: 50%;
   background: linear-gradient(0deg, #1E1E1E, #313131);
 }
+
 .dropdown_lines{
   width: 1.9vh;
   height: 4vh;
   border-left: 3px solid white;
   border-right: 3px solid white;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
+
 .dropdown_menu:hover .dropdown_lines {
   transform: none;
   -webkit-transition: transform 0.5s ease-in-out;
@@ -143,16 +153,10 @@ header {
 }
 
 
-//Title
-//---------------------------------------------------------------------------------
 
-h1 {
-  font-family:Mona Sans Wide;
-  font-style: wide;
-  font-weight: 400;
-  font-size: 6.5vw;
-  line-height: 15vh;
-}
+/*Title
+---------------------------------------------------------------------------------*/
+
   
 
 
@@ -168,6 +172,7 @@ h1 {
   margin: 0 0 -2.5vh 1.5vw;
 }
 
+
 .main_title2 {
   font-family: Mona Sans Italic;
   display: inline;
@@ -178,13 +183,13 @@ h1 {
 }
 
 
-//First Section
-//---------------------------------------------------------------------------------------
+/*First Section
+---------------------------------------------------------------------------------------*/
 
 #section1_img {
+  width: 90vw;
   display: block;
   margin: 7vh auto 4vh auto;
-  width: 90vw;
 }
 
 .circle_graphic {
@@ -194,8 +199,8 @@ h1 {
 
 
 
-//Second Section --About
-//-----------------------------------------------------------------------------------------
+/*Second Section --About
+-----------------------------------------------------------------------------------------*/
 
 
 .title2 {
@@ -205,9 +210,9 @@ h1 {
 }
 
 .title2_about {
+  margin: 4vh 0;
   font-family: Mona Sans Italic;
   font-weight: 100;
-  margin: 4vh 0;
 }
 
 .title2_kodelab {
@@ -218,18 +223,18 @@ h1 {
 .section2_p {
   width: 100vw;
   padding:0 0.5vw;
-  font-size: 3vw;
   margin: 6.5vh 0 0 0;
+  font-family: Mona Sans;
+  font-size: 3vw;
   line-height: 10vh;
   word-spacing: 1.5px;
   letter-spacing: 1;
-  font-family: Mona Sans;
 }
 
 .horizontal_divider {
   width: 90vw;
-  margin: 10vh auto;
   height: 1.5px;
+  margin: 10vh auto;
   background-color: #D9D9D9;
   position: relative;
 }
@@ -263,16 +268,15 @@ h1 {
 }
 
 .features h4 {
+  margin: 4vh 0 7vh 0;
   font-size: 2vw;
   font-weight: 400;
-  margin: 4vh 0 7vh 0;
 }
 
 .features_p {
+  color: @text;
   font-size: 1.5vw;
   font-family:Mona Sans regular;
-  color: @text;
-  padding: px;
   line-height: 2.4rem;
 }
 
@@ -288,8 +292,8 @@ h1 {
 }
 
 
-//Section Three - Our Services
-//--------------------------------------------------------------------------------
+/*Section Three - Our Services
+--------------------------------------------------------------------------------*/
 
 .section3 {
   width: 100vw;
@@ -320,10 +324,10 @@ h1 {
 }
 
 .service h3 {
+  margin: 12vh 0 5vh 5vw;
   position: absolute;
   font-size: 4.6vw;
   font-weight: 100;
-  margin: 12vh 0 5vh 5vw;
 }
 
 .service img {
@@ -344,19 +348,19 @@ h1 {
 }
 
 .service_p {
-  position: absolute;
   width: 39vw;
+  margin: 25vh 0 0 5vw;
+  position: absolute;
+  color: @text;
+  font-size: 1.4vw;
   letter-spacing: 1.3px;
   word-spacing: 1px;
   line-height: 2rem;
-  font-size: 1.4vw;
-  margin: 25vh 0 0 5vw;
-  color: @text;
 }
 
 
-//section4
-//-------------------------------------------------------------------------------------
+/*section4
+/-------------------------------------------------------------------------------------*/
 
 .section4 {
   height: 85vh;
@@ -365,11 +369,11 @@ h1 {
 }
 
 .section4 h2 {
+  margin: auto;
   font-size: 5vw;
   line-height: 13vh;
   font-weight: 200;
   letter-spacing: 1px;
-  margin: auto;
 }
 
 .section4 h3 {
@@ -381,18 +385,18 @@ h1 {
   width: 68%;
   margin: 5vh 0;
   font-size: 1.3vw;
+  color: @text;
   font-weight: 100;
   line-height: 4.2vh;
   letter-spacing: 1px;
-  color: @text;
 }
 
 #section4_lefttext {
   margin: 10vh 0 0 0;
 }
 
-//Tape - Selected Projects
-//------------------------------------------------------------------------------
+/*Tape - Selected Projects
+------------------------------------------------------------------------------*/
 
 #tape {
   width: 100vw;
@@ -412,13 +416,14 @@ h1 {
 }
 
 
-//Section5 --portfolio 
-//---------------------------------------------------------------------------------
+/*Section5 --portfolio 
+---------------------------------------------------------------------------------*/
 
 .section5 {
   margin: 14vh auto 5vh auto;
   display: grid;
 }
+
 #section5_example {
   display: flex;
   flex-direction: row;
@@ -426,8 +431,10 @@ h1 {
 
 #section5_mockup {
 width: 57.7vw;
+height: auto;
 margin: 0 1vw 0 0;
 }
+
 #section5_mockup-description {
   height: 100%;
   width: 31vw;
@@ -443,37 +450,37 @@ margin: 0 1vw 0 0;
 }
 
 #section5_mockup-description p {
+  color: @text;
   font-size: 1.1vw;
   font-weight: 100;
   line-height: 4vh;
   letter-spacing: 1px;
-  color: @text;
 }
 
 .button_style {
   height: 6.1vh;
   width: 7vw;
-  display: inline-block;
   margin: 2.5vh 0.5vw 2.5vh 0;
+  display: inline-block;
   border: 1px solid @c-w2;
+  border-radius: 40px;
   font-size: 1.1vw;
   line-height: 6.1vh;
   text-align: center;
-  border-radius: 40px;
 }
 #section5_largebutton {
   width: 14.3vw;
   height: 8.4vh;
-  display: block;
   margin: 3vh 0;
-  line-height: 8.4vh;
   border: 2px solid @c-w2;
+  display: block;
+  line-height: 8.4vh;
 }
 
 
 
-//website gallery
-//--------------------------------------------------------------------------------------
+/*website gallery
+--------------------------------------------------------------------------------------*/
 
 #portfolio {
   width: 100vw;
@@ -495,10 +502,10 @@ margin: 0 1vw 0 0;
 }
 
 .portfolio_item h3 {
-  font-size: 2vw;
-  font-weight: 100;
   margin: 3.75vh 0 5vh 0;
   display: inline;
+  font-size: 2vw;
+  font-weight: 100;
 }
 
 .portfolio_item a {
@@ -508,9 +515,9 @@ margin: 0 1vw 0 0;
   margin: 2.5vh 0 2.5vh 9vw;
   border: 2px solid @c-w2;
   border-radius: 40px;
+  text-align: center;
   font-size: 1.2vw;
   line-height: 8.5vh;
-  text-align: center;
 }
 
 .portfolio_item img {
@@ -524,8 +531,8 @@ margin: 0 1vw 0 0;
 }
 
 
-//View More Circle
-//----------------------------------------------------------------------------
+/*View More Circle
+----------------------------------------------------------------------------*/
 
 #view_more {
   height: 16vw;
@@ -547,8 +554,8 @@ margin: 0 1vw 0 0;
 
 
 
-//section6
-//-----------------------------------------------------------------------
+/*section6
+-----------------------------------------------------------------------*/
 
 
 .section6 {
@@ -579,8 +586,8 @@ margin: 0 1vw 0 0;
 }
 
 
-//Section 7 --globe vector etc... 
-//--------------------------------------------------------------------------------
+/*Section 7 --globe vector etc... 
+--------------------------------------------------------------------------------*/
 
 
 
@@ -598,9 +605,9 @@ margin: 0 1vw 0 0;
 .section7 h2 {
   width: 55vw;
   padding: 2vh 0 0 0;
+  color: @background;
   font-size: 5.25vw;
   font-weight: 100;
-  color: @background;
 }
 
 .section7 p {
@@ -621,17 +628,17 @@ margin: 0 1vw 0 0;
 }
 
 #section7_headingsmall {
-  color: @c-w;
   margin: -135vh 0 0 0;
   position: absolute;
+  color: @c-w;
   font-size: 1.8vw;
   font-weight: 200;
 }
 
 #section7_heading2 {
   width: 55vw;
-  color: @c-w;
   margin: -140vh 0 0 36vw;
+  color: @c-w;
 }
 #section7_p2 {
   width: 53vw;
